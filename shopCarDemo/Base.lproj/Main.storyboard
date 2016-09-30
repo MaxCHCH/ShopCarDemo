@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test05" translatesAutoresizingMaskIntoConstraints="NO" id="eXJ-Jp-GzM">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="5sa-vs-RzK"/>
+                                    <constraint firstAttribute="height" constant="30" id="zep-ng-oNx"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kcb-G8-bmh">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAP-eF-k9t">
+                                        <frame key="frameInset" minX="547" minY="5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="AXV-Wp-kFr"/>
+                                            <constraint firstAttribute="width" constant="30" id="lnE-gV-Mjn"/>
+                                        </constraints>
+                                        <state key="normal" image="TabCartSelected"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.37495735287666321" green="0.32688021659851074" blue="0.77932882308959961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bAP-eF-k9t" secondAttribute="bottom" constant="5" id="Bqi-Ks-0Rr"/>
+                                    <constraint firstItem="bAP-eF-k9t" firstAttribute="top" secondItem="Kcb-G8-bmh" secondAttribute="top" constant="5" id="Nl9-yB-EZP"/>
+                                    <constraint firstAttribute="height" constant="40" id="OTj-Aw-D1T"/>
+                                    <constraint firstAttribute="trailing" secondItem="bAP-eF-k9t" secondAttribute="trailing" constant="23" id="irJ-yr-VKI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eXJ-Jp-GzM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="49" id="8EZ-6n-npI"/>
+                            <constraint firstItem="eXJ-Jp-GzM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="TeE-re-H3Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kcb-G8-bmh" secondAttribute="bottom" id="X0l-aB-RNF"/>
+                            <constraint firstAttribute="trailing" secondItem="Kcb-G8-bmh" secondAttribute="trailing" id="Zgd-hH-lJT"/>
+                            <constraint firstItem="Kcb-G8-bmh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eS1-l6-ejU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goodsImageView" destination="eXJ-Jp-GzM" id="VoV-hX-bIA"/>
+                        <outlet property="shopCarButton" destination="bAP-eF-k9t" id="kQw-wq-Cko"/>
+                        <outlet property="shopCarSuperView" destination="Kcb-G8-bmh" id="PYZ-jF-FuU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="74"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TabCartSelected" width="30" height="30"/>
+        <image name="test05" width="500" height="312"/>
+    </resources>
+</document>
